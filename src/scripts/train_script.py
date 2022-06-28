@@ -8,14 +8,14 @@ from ignite.contrib.handlers import ProgressBar
 from ignite.metrics import Average, Accuracy
 from ignite.handlers import Events, EpochOutputStore, EarlyStopping
 
-from _script_util import (register_ss_index, retrieve_ss_index, gen_new_ssindex, 
+from src.training._script_util import (register_ss_index, retrieve_ss_index, gen_new_ssindex, 
                           _update_ssindex, _transform_labels, load_ss_index, gen_logo_dataloader, 
                           gen_logo_triplet_dataloader, _register_model, toggel_freeze, 
                           get_param_to_train, _get_special_classes, flatten, TrainConf, score_factory)
-from _model import  TripletLogoModel, DoubleTripledLoss
-from _ignite import (inference_factory, logo_prepair_batch, train_factory, 
+from src.training._model import  TripletLogoModel, DoubleTripledLoss
+from src.training._ignite import (inference_factory, logo_prepair_batch, train_factory, 
                      logo_triplet_prepair_batch, TripletAccuracy)
-from _azure_util import azure_log_metrics
+from src.training._azure_util import azure_log_metrics
 
 
 @click.command()
