@@ -14,11 +14,11 @@ from azureml.exceptions import WebserviceException
 from pydantic import BaseModel
 
 
-from _model import save_model, load_model, LogoModel, get_resnet18
-from _util import save_ss_index, load_ss_index, gen_ss_index, flatten
+from ._model import save_model, load_model, LogoModel, get_resnet18
+from ._util import save_ss_index, load_ss_index, gen_ss_index, flatten
 from indexmodel import SSIndex
-from _azure_util import azure_log_metrics
-from _dataset import SimpleDataset, trans, TripletIndexDataset
+from ._azure_util import azure_log_metrics
+from ._dataset import SimpleDataset, trans, TripletIndexDataset
 
 
 class TrainConf:
