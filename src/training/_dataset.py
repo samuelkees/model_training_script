@@ -2,7 +2,7 @@ from torch.utils.data import Dataset, DataLoader
 from torchvision import get_image_backend, transforms
 # https://pytorch.org/docs/stable/data.html#torch.utils.data.IterableDataset
 from torch.utils.data import IterableDataset, DataLoader
-from lib.indexmodel.indexmodel import SSIndex
+from indexmodel import SSIndex
 import numpy as np
 import torch
 import random

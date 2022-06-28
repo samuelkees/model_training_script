@@ -16,7 +16,7 @@ from pydantic import BaseModel
 
 from _model import save_model, load_model, LogoModel, get_resnet18
 from _util import save_ss_index, load_ss_index, gen_ss_index, flatten
-from lib.indexmodel.indexmodel import SSIndex
+from indexmodel import SSIndex
 from _azure_util import azure_log_metrics
 from _dataset import SimpleDataset, trans, TripletIndexDataset
 

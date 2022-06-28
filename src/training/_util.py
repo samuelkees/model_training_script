@@ -9,7 +9,7 @@ import os
 from siuba import _, mutate, filter as _filter, group_by, summarize
 from siuba.siu import symbolic_dispatch
 
-from lib.indexmodel.indexmodel import SSIndex
+from indexmodel import SSIndex
 
 @symbolic_dispatch
 def n(x):

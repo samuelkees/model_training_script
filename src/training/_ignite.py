@@ -10,7 +10,7 @@ from _model import TripletAcc
 from ignite.metrics import Metric
 from ignite.exceptions import NotComputableError
 
-from lib.indexmodel.indexmodel import SSIndex, quantifier, confidence, min_dis
+from indexmodel import SSIndex, quantifier, confidence, min_dis
 from _script_util import flatten
 
 
