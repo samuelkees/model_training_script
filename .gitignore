@@ -1,0 +1,5 @@
+notebooks/tmp/*
+*/.ipynb_checkpoints/*
+*.pyc
+
+**/.azureml/*
