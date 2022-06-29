@@ -6,12 +6,12 @@ from typing import Callable, Tuple
 from torch.optim import Optimizer
 from torch.nn.modules.loss import _Loss
 from ignite.metrics.metric import sync_all_reduce, reinit__is_reduced
-from _model import TripletAcc
+from training._model import TripletAcc
 from ignite.metrics import Metric
 from ignite.exceptions import NotComputableError
 
 from indexmodel import SSIndex, quantifier, confidence, min_dis
-from _script_util import flatten
+from training._script_util import flatten
 
 
 def inference_factory(model: Module, device: torch.device, 

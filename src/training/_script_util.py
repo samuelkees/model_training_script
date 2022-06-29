@@ -13,12 +13,11 @@ from torch.utils.data import DataLoader
 from azureml.exceptions import WebserviceException
 from pydantic import BaseModel
 
-
-from ._model import save_model, load_model, LogoModel, get_resnet18
-from ._util import save_ss_index, load_ss_index, gen_ss_index, flatten
+from training._model import save_model, load_model, LogoModel, get_resnet18
+from training._util import save_ss_index, load_ss_index, gen_ss_index, flatten
 from indexmodel import SSIndex
-from ._azure_util import azure_log_metrics
-from ._dataset import SimpleDataset, trans, TripletIndexDataset
+from training._azure_util import azure_log_metrics
+from training._dataset import SimpleDataset, trans, TripletIndexDataset
 
 
 class TrainConf:
